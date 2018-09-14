@@ -1,0 +1,25 @@
+{{define "root"}}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB NEWS</title>
+	<link rel="stylesheet" type="text/css" href="/-/css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" >
+	{{template "root-style" .}}
+</head>
+<body>
+<div>
+Navbar
+</div>
+<div class="ui container">
+{{template "root-body" .}}
+</div>
+<div>
+	footer
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
+{{template "root-script" .}}
+</body>
+</html>
+{{end}}

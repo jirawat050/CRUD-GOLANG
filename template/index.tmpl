@@ -1,0 +1,23 @@
+{{define "root-body"}}
+<div>
+	Index page
+	<a href="/login">Login</a>
+	<a href="/register">Register</a>
+	<br>
+	<ul>
+	{{range .List}}
+
+<li><a href="/news/{{.ID.Hex}}">{{.Title}}</a></li>
+{{end}}
+</ul>
+</div>
+{{end}}
+
+{{define "root-script"}}
+<script type="text/javascript">
+	console.log("index")
+</script>
+{{end}}
+
+{{define "root-style"}}
+{{end}}
